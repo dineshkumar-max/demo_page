@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            /* Set the background color for the body */
+            body {
+                background-color: white; /* Light grey background color */
+                height: 500px;
+                margin-top: 1px;
+            }
+    
+            /* Make the image smaller on mobile devices */
+            .img-responsive {
+                max-width: 100%;
+                height: 500px;
+                margin-left: 230px;
+            }
+    
+            /* Style for the form container */
+            .form-container {
+              height: 500px;
+              width: 400px;
+              margin-left: 50px;
+                background-color: white; /* White background for the form */
+                padding: 20px; /* Padding around the form */
+                border-radius: 10px; /* Rounded corners */
+                box-shadow: 0 4px 8px rgba(17, 16, 16, 0.1); /* Subtle shadow for depth */
+            }
+    
+            /* Center text and elements within form container */
+            .text-center {
+                text-align: center;
+            }
+    
+            /* Responsive image adjustments */
+            @media (max-width: 576px) {
+                .img-responsive {
+                    width: 80%;
+                    display: none;
+                }
+            }
+            @media (max-width :576px) {
+                .form-container{
+                    width: 300px;
+                    height: 460px;
+                }
+                
+            }
+             @media (max-width :576px) {
+                #foot{
+                   margin-top: 215px;
+                }
+                
+            }
+            a{
+                text-decoration: none;
+            }
+    
+            /* Custom styles for the "Log in" button */
+            .btn-primary {
+                background-color: #007bff; /* Adjust as needed */
+                border-color: #007bff;
+            }
+    
+            /* Custom styles for the "Sign up" and "Forgot password" links */
+            .pass-word, .sign {
+                color: #007bff; /* Adjust as needed */
+            }
+    
+            .pass-word:hover, .sign:hover {
+                text-decoration: underline;
+            }
+            .img-fluid-1{
+                width: 30%;
+            }
+            .img-1{
+                   width: 30%;
+                   margin-left: 30%;
+            }
+              #meta{
+                width: 10%;
+                margin-left: 45%;
+                
+            }
+            .from{
+                margin-left: 60%;
+                padding: 0%;
+                margin: 0%;
+                text-align: center;
+                margin-top: 3px;
+            }
+            .footer_1{
+                background-color: whitesmoke;
+                border-top: 1px solid gray;
+            }
+                 .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            z-index: 9999; /* Ensure it covers the entire page */
+        }
+
+        /* Main content styling */
+        .main-content {
+            display: none; /* Initially hide the main content */
+        }
+        .load{
+            width: 350px;
+            height: 600px;
+        }
+             @media (max-width: 575.98px) {
+            .loading-screen {
+                display: flex; /* Show loading screen on small screens */
+            }
+
+            .main-content {
+                display: none; /* Hide main content initially */
+            }
+        }
+        </style>
+    </head>
+    
+    <body>
+         <h5>Welcome to the Demo Login Page</h5>
+          <div class="loading-screen">
+            <img src="loading.jpeg" alt="Loading" class="load" >
+        </div>
+    
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Left Column with Image -->
+                <div class="col-sm-6">
+                    <img src="dinesh.jpg" alt="login" class="img-fluid img-responsive">
+                </div>
+                <!-- Right Column with Login Form -->
+                <div class="col-sm-6">
+                    <div class="form-container">
+                        <img class="img-1 img-fluid" src="insta.png" alt="">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Phone number, username or E-mail">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="mb-3 d-flex justify-content-center">
+                            <input type="button" class="btn btn-primary" value="Log in">
+                        </div>
+                        <div class="mb-3 text-center">
+                            <label for="or" class="or-value">________________ OR ________________</label>
+                        </div>
+                        <div class="mb-3 text-center">
+                          
+                            <a href="https://www.facebook.com" class="btn btn-primary"><img src="communication.png" alt="" class="img-name" width="25px" style="padding-right: 2px;">Log in with Facebook</a>
+                        </div>
+                        <div class="mb-3 text-center">
+                            <a href="#" class="pass-word">Forgot password?</a>
+                        </div>
+                        <div class="mb-3 text-center">
+                            <label for="or" class="no-account">Don't have an account? <a href="#" class="sign"> Sign up</a></label>
+                        </div>
+                        <div class="mb-3 text-center">
+                            <label for="label-1" class="label-1">Get The App</label>
+                        </div>
+                        <div class="text-center">
+                            <a href="https://apps.microsoft.com/home?hl=en-us&gl=IN"><img src="playstore.png" alt="Get on the App Store" class="img-fluid-1"></a>
+                            <a href="https://play.google.com"><img src="Screenshot 2024-08-22 172314.png" alt="Get it on Google Play" class="img-fluid-1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Links -->
+            <div class="row mt-3">
+                <div class="col-sm-12">
+                    <ul class="list-unstyled d-flex flex-wrap justify-content-around" id="foot">
+                        <li><a href="#">Meta</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Top Accounts</a></li>
+                        <li><a href="#">Hashtags</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Instagram Lite</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+          <footer>
+            <div class="footer_1">
+                <p class="from">from</p>
+                <img src="meta.png" alt="" class="center" id="meta">
+
+
+
+            </div>
+        </footer>
+         <script>
+            // Function to hide the loading screen and show the main content
+            function hideLoadingScreen() {
+                const loadingScreen = document.querySelector('.loading-screen');
+                const mainContent = document.querySelector('.main-content');
+    
+                if (window.innerWidth <= 575) {
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none'; // Hide the loading screen
+                        mainContent.style.display = 'block';  // Show the main content
+                    }, 2000); // 2000 milliseconds = 2 seconds
+                } else {
+                    loadingScreen.style.display = 'none'; // Hide the loading screen on larger screens
+                    mainContent.style.display = 'block';  // Show the main content on larger screens
+                }
+            }
+    
+            // Call the function when the DOM is fully loaded
+            document.addEventListener('DOMContentLoaded', hideLoadingScreen);
+            // Also call on resize to handle changes in screen size dynamically
+            window.addEventListener('resize', hideLoadingScreen);
+        </script>
+    
+    </body>
+    
+    </html>
